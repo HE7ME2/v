@@ -1,0 +1,80 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  width:100%;
+}
+section{
+  display:inline-block;
+  vertical-align:top;
+  max-width:600px;
+  overflow-y:scroll;
+  height:calc(100% - 60px - 21px);
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+img, picture, video, canvas {
+  display: block;
+  max-width: 100%;
+}
+figure{
+  vertical-align:top;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  font-weight:400;
+  font-size:14px;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+#main-nav{position:sticky;top:0;margin-bottom:21px;}
+#project-title{display:inline-block;max-width:100px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+#project-title-container{width:100px;display:inline-block;}
+body{font-family:"IBM Plex Sans", sans-serif;font-weight:400;font-size:14px;padding:0px 5px 5px 5px;;}
+nav,ul,header,main{display:inline-block;max-width:100%;}
+ul,li,main{vertical-align:top;}
+p{margin-bottom:21px;}
+time{margin-bottom:21px;}
+a{color:black;text-decoration:none;}
+ul{padding-inline-start:0;list-style-type:none;}
+ul,figure{margin:0;}
+.pad{padding-inline-end:1em;}
+.gap{padding: 5px 5px 5px 5px;}
+.body-text{max-width:500px;}
+.site-title{padding-inline-end:1em;white-space:nowrap;overflow:hidden;position:relative;max-width:100%;}
+.logo{height:32px;}
+.project{display:block;}
+.project-text{}
+.project-gallery{}
+
+@media only screen and (max-width: 1300px) {
+  section{
+      overflow-y:visible;
+      display:block;
+      height:auto;
+  }
+}
+
+  .mask {
+    -webkit-mask-image: url($mask);
+    mask-image: url($mask);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }

@@ -1,0 +1,5 @@
+title: Project Image
+create:
+  width: 500
+  height: 500
+  crop: true
