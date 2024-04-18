@@ -50,15 +50,15 @@ p, h1, h2, h3, h4, h5, h6 {
 body{font-family:"IBM Plex Sans", sans-serif;font-weight:400;font-size:14px;padding:0px 5px 5px 5px;;}
 nav,ul,header,main{display:inline-block;max-width:100%;}
 ul,li,main{vertical-align:top;}
-p{margin-bottom:21px;}
+p{margin-bottom:21px;max-width:400px;text-align:justify;}
 time{margin-bottom:21px;}
 a{color:black;text-decoration:none;}
 ul{padding-inline-start:0;list-style-type:none;}
 ul,figure{margin:0;}
-.pad{padding-inline-end:1em;}
+.pad{padding-inline-end:5px;margin-bottom:21px;}
 .gap{padding: 5px 5px 5px 5px;}
 .body-text{max-width:500px;}
-.site-title{padding-inline-end:1em;white-space:nowrap;overflow:hidden;position:relative;max-width:100%;}
+.site-title{padding-inline-end:5px;white-space:nowrap;overflow:hidden;position:relative;max-width:100%;}
 .logo{height:32px;}
 .project{display:block;}
 .project-text{}
@@ -70,6 +70,15 @@ ul,figure{margin:0;}
       display:block;
       height:auto;
   }
+}
+
+@media only screen and (max-width: 800px) {
+  body,p,h1,h2,h3,h4,h5,h6{font-size:1em;}
+
+  }
+  
+@media only screen and (max-width: 360px) {
+ul{display:block;}
 }
 
   .mask {
